@@ -11,6 +11,7 @@
 		67701B3620CB24BF0069DA8C /* HSMain.h in Headers */ = {isa = PBXBuildFile; fileRef = 67701B3420CB24BF0069DA8C /* HSMain.h */; };
 		67701B3720CB24BF0069DA8C /* HSMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 67701B3520CB24BF0069DA8C /* HSMain.m */; };
 		67701B3B20CB25460069DA8C /* WSSketch.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 67701B3820CB25060069DA8C /* WSSketch.js */; };
+		72703E4C76AAC3AF8E1DBD75 /* Pods_WSSketch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BA866278E9C4C8B0D8C9D5 /* Pods_WSSketch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,12 +28,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		22BA866278E9C4C8B0D8C9D5 /* Pods_WSSketch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WSSketch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D4F60E5B8773F67F3AED81 /* Pods-WSSketch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSSketch.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSSketch/Pods-WSSketch.release.xcconfig"; sourceTree = "<group>"; };
 		67701B2920CB248E0069DA8C /* WSSketch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WSSketch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67701B2C20CB248E0069DA8C /* WSSketch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSSketch.h; sourceTree = "<group>"; };
 		67701B2D20CB248E0069DA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67701B3420CB24BF0069DA8C /* HSMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSMain.h; sourceTree = "<group>"; };
 		67701B3520CB24BF0069DA8C /* HSMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSMain.m; sourceTree = "<group>"; };
 		67701B3820CB25060069DA8C /* WSSketch.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = WSSketch.js; sourceTree = "<group>"; };
+		A1DC6AE4A1DE5F17B9A43237 /* Pods-WSSketch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSSketch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WSSketch/Pods-WSSketch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,17 +44,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72703E4C76AAC3AF8E1DBD75 /* Pods_WSSketch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FA0BDC35A942C41916A7F00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1DC6AE4A1DE5F17B9A43237 /* Pods-WSSketch.debug.xcconfig */,
+				65D4F60E5B8773F67F3AED81 /* Pods-WSSketch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		67701B1F20CB248E0069DA8C = {
 			isa = PBXGroup;
 			children = (
 				67701B2B20CB248E0069DA8C /* WSSketch */,
 				67701B2A20CB248E0069DA8C /* Products */,
+				2FA0BDC35A942C41916A7F00 /* Pods */,
+				C92683760FA4CA7C24D0E052 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +90,14 @@
 			path = WSSketch;
 			sourceTree = "<group>";
 		};
+		C92683760FA4CA7C24D0E052 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22BA866278E9C4C8B0D8C9D5 /* Pods_WSSketch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,6 +117,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67701B3120CB248E0069DA8C /* Build configuration list for PBXNativeTarget "WSSketch" */;
 			buildPhases = (
+				F8CECB3E7703E0CC53D80362 /* [CP] Check Pods Manifest.lock */,
 				67701B2420CB248E0069DA8C /* Sources */,
 				67701B2520CB248E0069DA8C /* Frameworks */,
 				67701B2620CB248E0069DA8C /* Headers */,
@@ -148,6 +173,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F8CECB3E7703E0CC53D80362 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WSSketch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		67701B2420CB248E0069DA8C /* Sources */ = {
@@ -278,6 +324,7 @@
 		};
 		67701B3220CB248E0069DA8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1DC6AE4A1DE5F17B9A43237 /* Pods-WSSketch.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -290,11 +337,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = WSSketch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = t.WSSketch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -303,6 +346,7 @@
 		};
 		67701B3320CB248E0069DA8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D4F60E5B8773F67F3AED81 /* Pods-WSSketch.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -315,11 +359,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = WSSketch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = t.WSSketch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

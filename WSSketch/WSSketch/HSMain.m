@@ -12,6 +12,6 @@
 @implementation HSMain
 - (NSString *)helloText {
     HSLog(@"Reading helloText");
-    return @"pule in curu mati google fufuti gura mati";
+    return @"master da v0.1.4";
 }
 @end

@@ -5,7 +5,7 @@ var HelloSketch_Log = HelloSketch_Log || log;
  var frameworkName = "WSSketch";
  var directory = HelloSketch_FrameworkPath;
  if (mocha.valueForKey(frameworkName)) {
- HelloSketch_Log("😎 loadFramework: pula sketch`" + frameworkName + "` already loaded.");
+ HelloSketch_Log("😎 loadFramework: sketch  use_frameworks!`" + frameworkName + "` already loaded.");
  return true;
  } else if ([mocha loadFrameworkWithName:frameworkName inDirectory:directory]) {
  HelloSketch_Log("✅ loadFramework: `" + frameworkName + "` success!");
